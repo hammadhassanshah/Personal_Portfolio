@@ -15,48 +15,97 @@ html {
 
 }
 
-.about-me {
-    text-align: left;
-    padding: 20px;
-    background-color: #111;
-    color: white;
-    font-family: "Montserrat";
-    font-size: 10px; 
-    line-height: 1.6;
-    display: flex;
-    align-items: center;
 
+
+.wrapper{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+  background: black;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 100;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 40px;
+  font-weight: 300;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 10px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 150%;
+  width: 100%;
+  background: black;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
 }
 
-.line {
-    position: absolute;
-    top: 10%;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    background-color: blue;
-    height: 40%;
-}
+
+
+
+
+
+
+
+
 
 .text {
     flex: 1;
     text-align: center;
 }
 
+
 .image {
-    flex: 1;
-    text-align: center;
-    background-color: #111;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    background-color: black;
+
+
 }
 
 .image img {
-    max-width: 30%;
-    height: auto;
+    max-width: 15%;
+    max-height: 15%;
     object-fit: cover;
 }
 
