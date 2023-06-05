@@ -127,6 +127,60 @@ html {
 
 
 
+/* HERE THE ABOUT ME STARTS */
+
+.page-wrapper {
+    display: flex;
+    height: 70vh;
+  }
+  
+  .divider {
+    width: 2px;
+    background-color: black;
+  }
+  
+  .left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 5%;
+
+  }
+
+
+  .right-section {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat";
+    padding-left: 1in;
+    padding-right: 1in;
+  }
+
+
+
+/* HERE THE ABOUT ME ENDS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
