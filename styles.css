@@ -16,8 +16,6 @@ html {
 
 }
 
-
-
 .wrapper{
   display: flex;
   margin: 0;
@@ -80,15 +78,6 @@ html {
   }
 }
 
-
-
-
-
-
-
-
-
-
 .text {
     flex: 1;
     text-align: center;
@@ -132,9 +121,6 @@ html {
     transform: scale(1.2);
     transition: all .2s ease-in-out
 }
-
-
-
 
 
 
@@ -302,9 +288,6 @@ html {
     background-color: aqua;
   }
 }
-
-
-
 
 
 /* PROJECT STYLING */
